@@ -1,0 +1,34 @@
+1.使用 conda 创建环境
+conda create -n yolox python=3.8
+
+2.激活环境
+conda activate yolox
+
+3.下载pytorch
+conda install pytorch==1.7.0 torchvision==0.8.0 torchaudio==0.7.0 cudatoolkit=10.1 -c pytorch
+
+4.测试pytorch GPU版是否安装成功
+python
+import torch
+print(torch.cuda.is_available())
+
+5.移动到yolox文件夹下
+cd C:\Users\vvcat\Desktop\YOLOX-0.1.0
+
+6.安装yolox需要的依赖包
+pip install -r requirements.txt
+
+7.安装yolox:
+python setup.py install
+
+8.cd apex-master
+
+9.安装 apex
+python setup.py install
+
+
+10.安装 pycocotools
+pip install pycocotools
+
+11.运行YOLOX/tools/demo.py文件即可
+python tools/demo.py
